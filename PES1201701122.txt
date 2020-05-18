@@ -1,0 +1,63 @@
+Advanced Problem Solving Skills for Software Engineers - UE17CS356D 
+
+Mini Project(Intal) Report
+
+Submitted By- Mehul Thakral
+              PES1201701122
+
+1. Introduction
+ 
+    a. What is an intal?
+    -   An intal is a nonnegative integer of arbitrary length, which supports up to 1000 decimal digits. The integer is stored as a null-terminated string of ASCII characters.     It is represented as a string of decimal digits ('0' thru '9') that are stored in the big-endian style.
+
+    b. How is it different from an integer in general and integer data types supported by C?
+    -   Integer has a fixed range defined by architecture of machine which in case of intal depends on implementation and amount of memory allocated.
+
+    c. Applications of intal.
+    -   Since intal is of arbitrary length hence can be used to perform operations like        multiplication, addition, subtraction, etc of large numbers which by default is supported in languages like Python, Java and is missing in C.  
+
+2. Approach
+
+    a. Your approach in implementing the functionalities of intal.
+
+    -   intal_add: Take care of one of the numbers being 0, if not reverse the given numbers, keep adding digit by digit, taking care of carry, keep storing in result and finally reverse the result to get the desired output.
+
+    -   intal_compare: First compare based on length and in case of equal length compare digit by digit to break the tie.
+
+    -   intal_diff: Take care of one of the numbers being 0, if not place larger of numbers in first parameter and other in second, subtract digit by digit, storing in result and taking care of carry, chop-off zeroes at the end and reverse the result to get the desired output.    
+
+    -   intal_multiply: Take care of one of the numbers being 0, iteratively multiply each digit of first number by the second number, storing at appropriate place in result and taking care of carry, chop-off zeroes at the end and reverse the result to get the desired output.
+
+    -   intal_mod: Using binary search to find a number say num such that intal1-num*intal2<intal2 and returning the result obtained by intal1-num*intal2. In the process, a function to perform division of intal by unsigned int is also implemented.
+
+    -   intal_pow: Take care of base cases like intal="0" or n=0, implemented recursive O(logn) time and O(1) auxilary space algorithm.
+
+    -   intal_gcd: Implemented recursive Euclid's algorithm. 
+
+    -   intal_fibonacci: Take care of base cases like 0th or 1st fibonacci number and then implemented iterative bottom-up O(n) time and O(1) auxilary space dynamic programming algorithm.
+
+    -   intal_factorial: Initialized result with "1" to take care of base cases like for n = 0 or 1 and then implemented iterative bottom-up O(n) time and O(1) auxilary space dynamic programming algorithm.
+
+    -   intal_bincoeff: Take care of base cases like k=0 or n=k and then implemented iterative bottom-up O(n*k) time and O(k) auxilary space dynamic programming algorithm.
+
+    -   intal_max:  Iterate the array, keep updating maxIndex( index at which max value intal is stored ) and return maxIndex.
+
+    -   intal_min:  Iterate the array, keep updating minIndex( index at which min value intal is stored ) and return minIndex.
+
+    -   intal_search: Iterate the array, keep checking if intal at that position is equal to  the key and return the index in case of match else -1.
+
+    -   intal_binsearch: Implemented binary search to reduce the search space to half every iteration until only one element is present and thus returning its index if matched else -1. 
+
+    -   intal_sort: Quick sort is implemented and in the process partition and swap function are implemented.
+
+    -   coin_row_problem: Take care of base cases like having only one or two coins and then implemented iterative bottom-up O(n) time and O(1) auxilary space dynamic programming algorithm.
+
+3. Future work
+
+    a. Any more functionalities you think that can be included in the intal library?
+    -   Converting an int to intal so that can be used furthur for operations involving large numbers.
+    -   Division and modulus of an intal with an unsigned integer.
+
+    b. If you had no restrictions, how would you implement a library to handle integers of arbitrary length?
+    -   We will not keep MAX number of digits fixed rather expand and contract according to usage.
+
