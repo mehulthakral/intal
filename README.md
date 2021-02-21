@@ -22,3 +22,25 @@ An intal is a nonnegative integer of arbitrary length, but it is sufficient for 
 <code>prompt> gcc -Wall PES1201701122.c intal_sampletest.c -o mytest.out</code>
 
 <code>prompt> ./mytest.out</code>
+
+<h4>Operations</h4>
+<ol>
+  <li>Addition</li>
+  <li>Subtraction</li>
+  <li>Multiplication</li>
+  <li>Comparing</li>
+  <li>Modulus</li>
+  <li>Power</li>
+  <li>GCD</li>
+  <li>Fibonacci</li>
+  <li>Factorial</li>
+  <li>Binomial Coefficient</li>
+</ol>
+<h5>Array Operations</h5>
+<ol>
+  <li>Min</li>
+  <li>Max</li>
+  <li>Linear Search</li>
+  <li>Binary Search</li>
+  <li>Sort</li>
+</ol>
